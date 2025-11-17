@@ -1,4 +1,4 @@
-function btn() {
+function btn_is() {
   return <button>click me</button>
 }
-export default btn;
+export default btn_is;
