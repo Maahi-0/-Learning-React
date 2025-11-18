@@ -4,4 +4,4 @@ function random_is() {
   return <h1> Random Numberr is: {Math.round(number)}</h1 >
 }
 
-export default random_is;
+export default random_is;                   
