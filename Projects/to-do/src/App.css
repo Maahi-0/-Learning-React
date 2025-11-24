@@ -7,6 +7,11 @@ h1 {
 
 input {
   width: 100%;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  border-style: double;
+  background-color: white;
 }
 
 .items-conatiner {
@@ -19,4 +24,18 @@ input {
 
 .to-do-container {
   text-align: center;
+}
+
+.todo {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.container {
+  padding: 20px;
+  border: 1px solid rgba(126, 126, 133, 0.8);
+  background-color: rgb(190, 202, 206);
+  font-weight: 600;
+  border: 3px solid black;
+  border-radius: 10px;
 }

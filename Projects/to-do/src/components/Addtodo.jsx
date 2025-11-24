@@ -1,19 +1,19 @@
 function Addtodo() {
 
   return (
-
-    <div class="row">
-      <div class="col-4">
-        <input type="text" placeholder="enter todo here" />
-      </div>
-      <div class="col-4">
-        <input type="date" />
-      </div>
-      <div class="col-2">
-        <button type="button" className="btn btn-success">Success</button>
+    <div className="container text-center">
+      <div className="row kg-row">
+        <div className="col-6">
+          <input type="text" placeholder="enter todo here" />
+        </div>
+        <div className="col-4">
+          <input type="date" />
+        </div>
+        <div className="col-2">
+          <button type="button" className="btn btn-success">Add</button>
+        </div>
       </div>
     </div>
-
   );
 }
 
