@@ -1,10 +1,10 @@
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css"
+import InputBoxDetails from './components/ProfileDetails'
 function App() {
   return (
     <>
-      <h1>hello
-      </h1>
+      <InputBoxDetails></InputBoxDetails>
     </>
   )
 }
