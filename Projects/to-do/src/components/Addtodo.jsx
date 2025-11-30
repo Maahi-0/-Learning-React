@@ -10,6 +10,7 @@ function Addtodo({ onNewItem }) {
   }
   const handleDateChange = (event) => {
     setDueDate(event.target.value);
+
   }
   const hanedleAddbutClicked = () => {
     onNewItem(todoName, dueDaTe)
