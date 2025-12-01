@@ -1,35 +1,30 @@
-import { useState } from "react";
+import { useRef } from "react";
 
 function Addtodo({ onNewItem }) {
+  const todoNameElement = useRef();
+  const todoDateElement = useRef();
 
-  const [todoName, setTodoName] = useState("");
-  const [dueDaTe, setDueDate] = useState("");
-
-  const handleNameChange = (event) => {
-    setTodoName(event.target.value);
-  }
-  const handleDateChange = (event) => {
-    setDueDate(event.target.value);
-
-  }
-  const hanedleAddbutClicked = () => {
-    onNewItem(todoName, dueDaTe)
-    setDueDate("");
-    setTodoName("");
+  const hanedleAddbutClicked = (event) => {
+    event.preventDefault();
+    const todoName = todoNameElement.current.value;
+    const dueDaTe = todoDateElement.current.value;
+    todoNameElement.current.value = "";
+    todoDateElement.current.value = "";
+    onNewItem(todoName, dueDaTe);
   }
   return (
     <div className="container text-center">
-      <div className="row kg-row">
+      <form className="row kg-row" onSubmit={hanedleAddbutClicked}>
         <div className="col-6">
-          <input type="text" placeholder="enter todo here" value={todoName} onChange={handleNameChange} />
+          <input type="text" ref={todoNameElement} placeholder="enter todo here" />
         </div>
         <div className="col-4">
-          <input type="date" value={dueDaTe} onChange={handleDateChange} />
+          <input type="date" ref={todoDateElement} />
         </div>
         <div className="col-2">
-          <button type="button" className="btn btn-success" onClick={hanedleAddbutClicked}>Add</button>
+          <button className="btn btn-success">Add</button>
         </div>
-      </div>
+      </form>
     </div>
   );
 }
