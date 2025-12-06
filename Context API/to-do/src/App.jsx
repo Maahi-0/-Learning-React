@@ -4,6 +4,7 @@ import Itemtodos from "./components/itemtodo";
 import "./App.css";
 import { useState } from "react";
 import WelcomeMessage from "./components/WelcomMessage";
+import { TodoItemsContext } from "./store/todo-items-store";
 
 function App() {
 
@@ -25,11 +26,16 @@ function App() {
     setTodoitem(newTOdoItemm);
   }
 
-  return <center className="to-do-container">
-    <Appname></Appname>
-    <Addtodo onNewItem={handleNewItem}></Addtodo>
-    <WelcomeMessage todoItem={todoItem} />
-    <Itemtodos items={todoItem} onDeleteClick={handleDeleteItem} />
-  </center>
+  return (
+
+    <TodoItemsContext.Provider value={[]}>
+      <center className="to-do-container">
+        <Appname></Appname>
+        <Addtodo onNewItem={handleNewItem}></Addtodo>
+        <WelcomeMessage todoItem={todoItem} />
+        <Itemtodos items={todoItem} onDeleteClick={handleDeleteItem} />
+      </center>
+    </TodoItemsContext.Provider>
+  );
 }
 export default App;

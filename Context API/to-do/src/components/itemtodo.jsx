@@ -1,7 +1,13 @@
 
+import { useContext } from "react";
+import { TodoItemsContext } from "../store/todo-items-store";
 import ToDoItems from "./ToDoItem";
 
 const Itemtodos = ({ items, onDeleteClick }) => {
+
+
+  const todoItemFromContext = useContext(TodoItemsContext);
+  console.log(`${todoItemFromContext}`)
   return (
     <div className="items-conatiner">
 

@@ -1,10 +1,13 @@
 import './App.css'
-
+import Counter1 from './components/Counter1';
+import TextAerInPage from './components/TextAreaInPage'
 function App() {
 
   return (
     <>
-      <h1>counter  </h1>
+
+      <Counter1></Counter1>
+      <TextAerInPage heading="enter the text: "></TextAerInPage>
 
     </>
   );
