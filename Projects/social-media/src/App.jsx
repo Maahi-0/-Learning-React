@@ -1,13 +1,14 @@
 
 import './App.css'
-import Appname from './context/F2'
 
 function App() {
 
 
   return (
     <>
-      <Appname></Appname>
+      <div>
+        hello
+      </div>
     </>
   )
 }
