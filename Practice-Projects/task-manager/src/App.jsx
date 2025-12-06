@@ -3,7 +3,7 @@ import InputTask from "./components/InputTask";
 import UpcomingTask from "./components/UPcomingTask";
 import CompletedTask from "./components/CompletedTask";
 import "./App.css";
-
+import AppName from "./components/AppName";
 function App() {
   const [tasks, setTasks] = useState([]);
 
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Task Scheduler</h1>
+      <AppName />
 
       <InputTask addTask={addTask} />
 
