@@ -1,0 +1,93 @@
+/* Main Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #1b8a2f;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.input-section input,
+.input-section select {
+  padding: 8px 12px;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Add Task Button */
+.input-section button {
+  background: #138a36;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.input-section button:hover {
+  background: #0f6b2a;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  background: #f7f7f7;
+  border-radius: 6px;
+}
+
+th {
+  background: #ececec;
+  font-weight: 600;
+}
+
+/* Section Titles */
+h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #444;
+}
+
+/* Complete Button */
+.action-btn {
+  padding: 6px 12px;
+  background: #2b7cff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background: #1459cc;
+}

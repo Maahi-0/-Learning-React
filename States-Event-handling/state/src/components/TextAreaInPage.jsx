@@ -12,6 +12,7 @@ function TextAreaInPage(props) {
     let newtext2 = text.toLowerCase();
     settext(newtext2);
   }
+
   const handleonchange = (event) => {
     settext(event.target.value);
   }
@@ -26,6 +27,8 @@ function TextAreaInPage(props) {
         <button onClick={handleOnclick}>Covert to Uppercase</button>
 
         <button onClick={handleOnclick2}>Covert to lowercase</button>
+
+        <button onClick={() => { settext("") }}>Clear</button>
       </div>
 
 
