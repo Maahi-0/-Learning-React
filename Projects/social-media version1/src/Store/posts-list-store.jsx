@@ -15,6 +15,8 @@ const postListReducer = (currentPostList, action) => {
 }
 
 
+
+
 const PostListProvider = ({ children }) => {
 
   const [postList, dispachPostList] = useReducer(postListReducer, DEFAULT_CONTEXT);
